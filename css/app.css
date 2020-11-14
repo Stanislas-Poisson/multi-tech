@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+
+    padding-top: 45px;
+}
+
+body > header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 8px 4px;
+}
+
+body > header #toggleMenu {
+    display: none;
+}
+
+body > header #toggleMenu:checked  ~ nav {
+    display: block;
+}
+
+body > header #logo {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;
+}
+body > header #logo img {
+    vertical-align: middle;
+}
+
+body > header nav {
+    display: none;
+}
+
+body > header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body > header nav ul li {
+    text-align: center;
+    padding: 8px 4px;
+}
+body > header nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body > main {}
+
+body > main #content {}
+
+body > main aside {}
+
+body > main aside h3 {}
+
+body > main aside ul {}
+
+body > main aside ul li {}
+
+body > footer {}

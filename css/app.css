@@ -10,13 +10,12 @@ html, body {
 }
 
 body {
+    padding-top: 45px;
     background-color: rgb(236, 236, 236);
     color: black;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-
-    padding-top: 45px;
 }
 
 body > header {
@@ -25,12 +24,16 @@ body > header {
     right: 0;
     left: 0;
     z-index: 100;
-    background-color: white;
     padding: 8px 4px;
+    background-color: white;
 }
 
 body > header #toggleMenu {
     display: none;
+}
+
+body > header #toggleMenu + label {
+    margin-right: 16px;
 }
 
 body > header #toggleMenu:checked  ~ nav {
@@ -42,6 +45,7 @@ body > header #logo {
     line-height: 24px;
     vertical-align: top;
 }
+
 body > header #logo img {
     vertical-align: middle;
 }
